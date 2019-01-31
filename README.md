@@ -1,2 +1,2 @@
 # Object Detection App
-#### An object detection app for an upcoming Computer Vision course using Watson Visual Recognition IBM. Built with Django. Deployable to the IBM Cloud.
+#### An object detection and app for an upcoming Computer Vision course using IBM Watson Visual Recognition. Built with Django. Deployable to the IBM Cloud.
