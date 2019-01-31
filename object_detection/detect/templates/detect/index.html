@@ -1,0 +1,16 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'detect/style.css' %}">
+
+{% if 1 == 1 %}
+    <h1>
+        TRUE: {{ myheader }}
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li><a href="https://www.ibm.com/">IBM</a></li>
+        <li><a href="https://www.twitter.com/">Twitter</a></li>
+    </h1>
+{% else %}
+    <h4>
+        FALSE: {myheader}
+    </h4>
+{% endif %}
