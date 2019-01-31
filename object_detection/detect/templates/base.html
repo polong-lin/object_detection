@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static from staticfiles %}
+
+<head>
+
+  {% block meta %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% endblock meta %}
+
+  <!--Styles-->
+  {% block cdncss %}
+  <!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+  {% endblock cdncss %}
+
+  {% block css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'frontend/styles/base.css' %}"/>
+  {% endblock css %}
+
+  <title>{% block title %}IBM Watson Visual Recognition App{% endblock title %}</title>
+
+</head>
+
+<body>
+  {% block header %}
+  {% endblock header %}
+
+  {% block content %}
+  {% endblock content %}
+
+
+  {% block js %}
+  {% endblock js %}
+
+</body>
+
+</html>
