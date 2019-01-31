@@ -1,7 +1,13 @@
-{% load static %}
+{% extends 'base.html' %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'detect/style.css' %}">
+{% load static from staticfiles %}
 
+{% block css %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'detect/styles/index.css' %}" />
+{% endblock css %}
+
+{% block content %}
 {% if 1 == 1 %}
     <h1>
         TRUE: {{ myheader }}
@@ -14,3 +20,10 @@
         FALSE: {myheader}
     </h4>
 {% endif %}
+
+{% endblock content %}
+
+
+{% block js %}
+<script src="{% static 'detect/scripts/dropzone.min.js' %}"></script>
+{% endblock js %}
