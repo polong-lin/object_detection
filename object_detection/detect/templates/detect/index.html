@@ -10,6 +10,7 @@
 
 {% block content %}
 
+{% verbatim %}
 <div ng-app="myApp">
   <div ng-controller="MainController">
     <div class="dropzone" file-dropzone="[image/png, image/jpeg, image/gif]"
@@ -27,8 +28,8 @@
     <input type="file" fileread="uploadme.src">
     <img ng-src="{{ uploadme.src }}">
   </form>
-
 </div>
+{% endverbatim %}
 
 <!-- {% if 1 == 1 %}
     <h1>
