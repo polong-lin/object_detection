@@ -1,0 +1,14 @@
+body {
+  color: white;
+  background: rgb(29, 31, 39);
+}
+
+button {
+  pointer: cursor;
+}
+
+input[type=file] {
+  width: 500px;
+  height: 500px;
+  background: black;
+}
