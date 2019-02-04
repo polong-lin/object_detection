@@ -6,6 +6,7 @@
 {{ block.super }}
 <link rel="stylesheet" type="text/css" href="{% static 'detect/styles/index.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'detect/styles/angulardropimage.css' %}" />
+
 {% endblock css %}
 
 {% block content %}
@@ -51,4 +52,5 @@
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
 <script src="{% static 'detect/scripts/django-angular.js' %}"></script>
 <script src="{% static 'detect/scripts/angulardropimage.js' %}"></script>
+
 {% endblock js %}
